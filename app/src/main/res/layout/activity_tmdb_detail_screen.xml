@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    tools:context=".TMDB_Detail_Screen">
+
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/backdropImage"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.031"
+        app:layout_constraintWidth_percent="1"
+        tools:ignore="MissingConstraints"
+        android:scaleType="fitXY"/>
+
+    <TextView
+        android:id="@+id/titleScreen2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="12dp"
+
+
+        android:text="Title"
+        android:textSize="32sp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/backdropImage"
+        app:layout_constraintWidth_percent="0.89" />
+
+    <TextView
+        android:id="@+id/voteAvg"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="20dp"
+        android:text="Vote Avg"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleScreen2"
+        app:layout_constraintWidth_percent="0.3" />
+
+    <ImageView
+        android:id="@+id/ratingStar"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="20dp"
+
+        android:src="@drawable/ratingstar"
+        app:layout_constraintEnd_toStartOf="@+id/voteAvg"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleScreen2" />
+
+    <TextView
+        android:id="@+id/year"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="year"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.045"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/voteAvg"
+        app:layout_constraintWidth_percent="0.4" />
+
+    <TextView
+        android:id="@+id/voteCount"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+
+        android:layout_marginEnd="12dp"
+        android:text="Vote Count"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleScreen2"
+        app:layout_constraintWidth_percent="0.4" />
+
+    <ImageView
+        android:id="@+id/voteSign"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="20dp"
+
+        android:src="@drawable/vote"
+        app:layout_constraintEnd_toStartOf="@+id/voteCount"
+        app:layout_constraintHorizontal_bias="0.521"
+        app:layout_constraintStart_toEndOf="@+id/voteAvg"
+        app:layout_constraintTop_toBottomOf="@+id/titleScreen2" />
+
+    <TextView
+        android:id="@+id/overview"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="overview"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.45"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/year"
+        app:layout_constraintVertical_bias="0.092"
+        app:layout_constraintWidth_percent="0.95" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
